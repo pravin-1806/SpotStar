@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.img1,.img2{
+    width: 350px;
+    height: auto;
+    border: 0px white solid;
+    border-radius: 200px;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    height: 80vh;
+}
+
+.img1:hover,.img2:hover{
+    border-color: aqua;
+    border-width: 3px;
+    box-shadow: 0 0 20px white;
+    padding: 10px;
+    transition: 0s;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}

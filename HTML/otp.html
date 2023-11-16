@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>otp</title>
+    <link rel="stylesheet" href="../CSS/otpStyle.css">
+    <script>
+        var otp=Math.floor(Math.random()*999999)
+        alert(otp)
+        function otp_verify()
+        {
+            var user_otp=document.querySelector(".inp").value;
+            if(otp==user_otp){
+                window.location.href="./index.html";
+            }else{
+                alert("Incorrect OTP");
+            }
+        }
+        function resend(){
+            window.location.href="./index.html";
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter OTP</h1>
+    <img src="../imgs/logo1.png" class="logo">
+    <form id="main" >
+        <input type="text" placeholder="OTP" class="inp"><br>
+        <input type="button" value="submit" class="verify" onclick="otp_verify()">
+    </form>
+    <p>Wants to send new otp?</p><br>
+    <button onclick="resend()">Resend OTP</button>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.loc a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 0px white solid;
+    padding: 12px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+.loc{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.loc a:hover{
+    background-color: #1c2128;
+    border-radius: 6px;
+    
+}
+
+.lang img{
+    height: 200px;
+    border-radius: 18px;
+}
+
+.lang{
+    display: flex;
+    height: 88vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.lang img:hover{
+    height: 230px;
+}

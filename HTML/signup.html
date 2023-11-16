@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../CSS/signupStyle.css">
+    <script>
+        function signup_validation() {
+            var email = document.getElementById("email").value;
+            let flag = false;
+            let email_flag = false;
+            for (var i = 0; i < email.length; i++) {
+                if (email[i] === '@') {
+                    flag = true;
+                }
+            }
+            if (flag === true) {
+                email_flag = true;
+            }
+
+            let phone = document.getElementById("phone").value;
+            let phone_flag = false;
+            if ((phone >= 6000000000) && (phone <= 9999999999)) {
+                phone_flag = true;
+            }
+
+            var password = document.getElementById("password").value;
+            var upper = 0;
+            var lower = 0;
+            var number = 0;
+            var special = 0;
+            var password_flag = false;
+            for (var i = 0; i < password.length; i++) {
+                if ((password[i] >= 'A') && (password[i] <= 'Z')) {
+                    upper++;
+                } else if ((password[i] >= 'a') && (password[i] <= 'z')) {
+                    lower++;
+                } else if ((password[i] >= '0') && (password[i] <= '9')) {
+                    number++;
+                } else {
+                    special++;
+                }
+            }
+            if ((upper >= 1) && (lower >= 1) && (number >= 1) && (special >= 1) && (password.length >= 8) && (password.length <= 16)) {
+                password_flag = true;
+            }
+
+            var confirmPassword = document.getElementById("confirm").value;
+            var confirm_flag = false;
+            if (password === confirmPassword) {
+                confirm_flag = true;
+            }
+
+            if (phone_flag && email_flag && password_flag && confirm_flag) {
+                window.location.href = "./otp.html";
+            } else {
+                alert('invalid Data');
+            }
+           return false;
+        }
+    </script>
+</head>
+<body>
+    <img src="../imgs/logo1.png" alt="" class="logo">
+    <img src="../imgs/headphone_gif1.gif" alt="" class="gif">
+    <h1>Sign Up</h1>
+    <form id="main">
+        <input type="text" placeholder="FIRST NAME"><br>
+        <input type="text" placeholder="LAST NAME"><br>
+        <input type="text" placeholder="PHONE NUMBER" id="phone"><br>
+        <input type="text" placeholder="MAIL ID" id="email"><br>
+        <input type="text" placeholder="PASSWORD" id="password"><br>
+        <input type="text" placeholder="CONFIRM PASSWORD" id="confirm"><br>
+        
+        <button type="reset" class="clear">Clear</button>
+        <button onclick="return signup_validation();">Sign up</button>
+    </form>
+</body>
+</html>
