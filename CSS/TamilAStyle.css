@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.head a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 0px white solid;
+    padding: 12px;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+body a:hover{
+    background-color: #1c2128;
+    border-radius: 6px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.artist{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.artist img{
+    width: 300px;
+    border:3px white solid;
+    border-radius: 10px;
+}
+
+.artist img:hover{
+    width: 330px;
+}
+
+h1{
+    color: white;
+    font-family: nationale,nationale-regular,helvetica,arial,sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.artistN{
+    color: white;
+    font-size: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 20vh;
+    justify-content: space-around;
+}
+

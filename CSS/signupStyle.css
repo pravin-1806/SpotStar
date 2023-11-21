@@ -1,0 +1,115 @@
+body{
+    /*background: linear-gradient(215deg,#171d26 15%,#000 85%) no-repeat 50% fixed;*/
+    background-color: black;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+#main{
+    display: inline-block;
+    text-align: center;
+    border: 2px black solid;
+    padding: 50px;
+    position: absolute;
+    top: 22%;
+    left: 53%;
+    color: white;
+    background-color: #1c2026;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+#main:hover{
+    border-color: aqua;
+    box-shadow: 0 0 20px white;
+    border-width: 4px;
+    border-radius: 20px;
+    transition: 2s;
+   }
+
+.gif{
+    height: 580px;
+    width: auto;
+    position: absolute;
+    top: 130px;
+    left: 210px;
+}
+
+h1{
+    color: white;
+    font-family: outline;
+    font-family: nationale,nationale-regular,helvetica,arial,sans-serif;
+    position: absolute;
+    top: 7%;
+    left: 57%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+input{
+    margin-bottom: 20px;
+    height: 25px;
+    width: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    color: white;
+    background-color: #1c2026 ;
+    font-size: 15px;
+    text-align: center;
+    padding: 7px;
+}
+
+::placeholder{
+    text-align: center;
+    color: whitesmoke;
+}
+
+label{
+    position: absolute;
+    top: 427px;
+    left: 160px;
+}
+
+.checkbox{
+    position: absolute;
+    right: 73px;
+}
+
+.clear{
+    color: black;
+    background-color: white;
+    font-size: 14px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 9px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+button:hover{
+    background-image:radial-gradient(white,#04D9FF);
+}
+
+.clear:hover{
+    background-image: radial-gradient(white,#04D9FF);
+}
+#para{
+    color: red;
+}
